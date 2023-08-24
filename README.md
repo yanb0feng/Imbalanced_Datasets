@@ -1,2 +1,2 @@
 # Imbalanced_Datasets
-不平衡数据集指的是数据集各个类别的样本量极不均衡。本文提供几种采用的过采样及欠采样方法。
+不平衡数据集指的是数据集各个类别的样本量极不均衡,如网络安全数据集（https://raw.githubusercontent.com/arjbah/nsl-kdd/master/nsl-kdd）中，未被攻击及受某几种常见攻击的数据（majority）远多于其余被攻击的数据（minority）。所以训练后模型可能可以达到很高的accuracy，但实际上并不能很好地区分majority与minority。然而在生活中，我们有的时候关注的正是这些minority的影响，如不常见的网络攻击类型怎样防范。本文提供几种采用的过采样及欠采样方法，并使用泛化性较好的adaboost与randomforest来对比处理前和处理后模型的变化。
